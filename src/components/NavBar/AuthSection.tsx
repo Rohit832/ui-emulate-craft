@@ -41,7 +41,7 @@ export const AuthSection: React.FC<AuthSectionProps> = ({ className = "" }) => {
       <button
         onClick={handleSignIn}
         disabled={isSigningIn}
-        className="text-black text-2xl font-bold relative max-md:text-xl max-sm:text-lg hover:text-gray-700 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 rounded-sm disabled:opacity-50 disabled:cursor-not-allowed"
+        className="text-foreground text-2xl font-bold relative max-md:text-xl max-sm:text-lg hover:text-muted-foreground transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background rounded-sm disabled:opacity-50 disabled:cursor-not-allowed"
         aria-label="Sign in to your account"
       >
         {isSigningIn ? 'Signing In...' : 'Sign In'}
@@ -50,7 +50,7 @@ export const AuthSection: React.FC<AuthSectionProps> = ({ className = "" }) => {
       <button
         onClick={handleBookDemo}
         disabled={isBookingDemo}
-        className="flex justify-center items-center border shadow-[3px_4px_0_0_#000] relative h-auto rounded-[5px] border-solid border-black bg-white hover:bg-gray-50 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed"
+        className="flex justify-center items-center border relative h-auto rounded-[5px] border-solid border-border bg-background hover:bg-muted transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed"
         aria-label="Book a demo session"
       >
         <img
